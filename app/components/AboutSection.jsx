@@ -5,21 +5,6 @@ import TabButton from './TabButton'
 
 const TAB_DATA = [
     {
-        title: 'skills',
-        id: 'skills',
-        content: (
-            <ul className='list-disc pl-2'>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>MongoDB</li>
-            </ul>
-        )
-    },
-    {
         title: 'education',
         id: 'education',
         content: (
@@ -45,7 +30,7 @@ const TAB_DATA = [
 
 const AboutSection = () => {
     const [isPending, startTransition] = useTransition();
-    const [tab, setTab] = useState('skills');
+    const [tab, setTab] = useState('education');
 
     const handleTabChange = (id) => {
         startTransition(() => {
@@ -63,7 +48,6 @@ const AboutSection = () => {
                     <p className='text-base md:text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 </div>
                 <div className='flex flex-row mt-8'>
-                    <TabButton selectTab={() => handleTabChange('skills')} active={tab === 'skills'}>Skills</TabButton>
                     <TabButton selectTab={() => handleTabChange('education')} active={tab === 'education'}>Education</TabButton>
                     <TabButton selectTab={() => handleTabChange('certifications')} active={tab === 'certifications'}>Certifications</TabButton>
                 </div>
