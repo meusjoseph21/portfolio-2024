@@ -15,8 +15,8 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFD23F] to-[#EE4266]">
+          <h1 className="text-slate-200 mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary-900 to-secondary-800">
               Hello, I&apos;m{" "}
             </span>
             <br></br>
@@ -32,30 +32,29 @@ const HeroSection = () => {
                 1000,
                 "An Innovator",
                 1000,
-
               ]}
               wrapper="span"
               speed={50}
-              style={{ color: "#F3FCF0"}}
+              style={{ color: "#F3FCF0" }}
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#F3FCF0] text-base sm:text-lg mb-6 lg:text-xl">
-          &quot;Theres a way to do it better - find it.&quot; - Thomas Edison
+          <p className="text-slate-200 text-base sm:text-lg mb-6 lg:text-xl">
+            &quot;Theres a way to do it better - find it.&quot; - Thomas Edison
           </p>
           <div>
             <Link
               href="/#contact"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#FFD23F] to-[#EE4266] hover:bg-slate-200 text-white"
+              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-secondary-900 to-secondary-800 hover:bg-slate-200 text-slate-200"
             >
               Hire Me
             </Link>
             <Link
               href="/"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#FFD23F] to-[#EE4266] hover:bg-slate-800 text-white mt-3"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-secondary-900 to-secondary-800 hover:bg-slate-800 text-slate-200 mt-3"
             >
               <span className="block bg-[#1F271B] hover:bg-slate-800 rounded-full px-5 py-2">
-                Download CV
+                Download Resume
               </span>
             </Link>
           </div>

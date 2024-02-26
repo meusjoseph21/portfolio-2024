@@ -16,14 +16,17 @@ const fadeInAnimationVariants = {
 
 const Skills = () => {
   return (
-    <section className="mt-[15rem] text-center sm:mb-40 scroll-mt-28" id="skills">
-      <h2 className="text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+    <section
+      className="mt-[15rem] text-center sm:mb-40 scroll-mt-28"
+      id="skills"
+    >
+      <h2 className="text-4xl font-bold text-slate-200 mt-4 mb-8 md:mb-12">
         Skills
       </h2>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-black">
+      <ul className="flex flex-wrap justify-center gap-2 text-lg text-primary-900">
         {skillsData.map((item, index) => (
           <motion.li
-            className="bg-white border border-black/[0.1] rounded-xl px-5 py-3"
+            className="bg-slate-200 border border-black/[0.1] rounded-xl px-5 py-3"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"

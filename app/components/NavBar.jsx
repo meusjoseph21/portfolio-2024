@@ -11,7 +11,7 @@ const NavBar = () => {
   return (
     <header className="z-[999] relative">
       <motion.div
-        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none bg-[#F3FCF0] bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"
+        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none bg-slate-200 bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       ></motion.div>
@@ -27,7 +27,7 @@ const NavBar = () => {
             >
               <Link
                 className={clsx(
-                  "flex w-full items-center justify-center text-[#1F271B] px-3 py-3 hover:text-[#1F271B] transition",
+                  "flex w-full items-center justify-center text-primary-900 px-3 py-3 hover:text-primary-900 transition",
                   { "text-black": activeSection === link.name },
                 )}
                 href={link.hash}
@@ -36,7 +36,11 @@ const NavBar = () => {
                 {link.name}
 
                 {link.name === activeSection && (
-                  <motion.span className="bg-gray-400 rounded-full absolute inset-0 -z-10" layoutId="activeSelection" transition={{type:"spring", stiffness:380, damping:30}}></motion.span>
+                  <motion.span
+                    className="bg-gray-400 rounded-full absolute inset-0 -z-10"
+                    layoutId="activeSelection"
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  ></motion.span>
                 )}
               </Link>
             </motion.li>
