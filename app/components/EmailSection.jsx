@@ -44,9 +44,9 @@ const EmailSection = () => {
   return (
     <section
       id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+      className="grid md:grid-cols-2 my-[10rem] md:my-[20rem] py-8 gap-4 relative"
     >
-      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
+
       <div className="z-10">
         <h5 className="text-xl font-bold text-slate-200 my-2">
           Let&apos;s Connect
@@ -58,12 +58,12 @@ const EmailSection = () => {
           I&apos;ll try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
-            <Image src={FaGithub} alt="Github Icon" />
-          </Link>
-          <Link href="linkedin.com">
-            <Image src={FaLinkedin} alt="Linkedin Icon" />
-          </Link>
+          <a href="https://github.com/meusjoseph21" target="_blank" rel="noopener noreferrer">
+            <FaGithub size={40} color="#F3FCF0" /> {/* Set size and color as needed */}
+          </a>
+          <a href="https://www.linkedin.com/in/joseph-meus/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin size={40} color="#F3FCF0" /> {/* Set size and color as needed */}
+          </a>
         </div>
       </div>
       <div>

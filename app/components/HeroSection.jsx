@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const HeroSection = () => {
   return (
@@ -43,20 +43,25 @@ const HeroSection = () => {
             &quot;Theres a way to do it better - find it.&quot; - Thomas Edison
           </p>
           <div>
-            <Link
-              href="/#contact"
+            <ScrollLink
+              to="contact"  // Target the section's ID
+              spy={true}
+              smooth={true}
+              offset={-200}  // Adjust the offset as needed
+              duration={500} // Adjust the duration as needed
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-secondary-900 to-secondary-800 hover:bg-slate-200 text-slate-200"
             >
               Hire Me
-            </Link>
-            <Link
-              href="/"
+            </ScrollLink>
+            <a
+              href="/files/resume.pdf"  // Replace with the actual path to your resume file
+              download="josephmeus-resume-2024.pdf"  // Specify the desired filename for the downloaded file
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-secondary-900 to-secondary-800 hover:bg-slate-800 text-slate-200 mt-3"
             >
               <span className="block bg-[#1F271B] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download Resume
               </span>
-            </Link>
+            </a>
           </div>
         </motion.div>
         <motion.div
