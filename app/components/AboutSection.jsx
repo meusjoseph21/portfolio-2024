@@ -29,18 +29,16 @@ const AboutSection = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-200 mb-4">
               About Me
             </h2>
-            <p className="text-slate-200 text-sm md:text-lg">
-              I am a full stack developer with a passion for creating beautiful
+            <p className="text-slate-200 font-light text-sm md:text-lg">
+              I am a <span className="font-bold">full stack developer</span> with a passion for creating beautiful
               and functional applications. I have experience in both frontend
               and backend development, and I am always looking to learn new
               technologies. Since the beginning of my career I have chosen a path that has required to me learn in and adapt in high demand environments. I am currently working as a Backend Engineer with
               Chek Financial, a fintech startup based in Miami Florida. 
             </p>
             <br></br>
-            <p className="text-slate-200 text-sm md:text-lg">
-            When I
-              am not coding, I enjoy riding my bike, hiking with my partner and
-              dog, having faith in the chicago bears, and playing videos games.
+            <p className="text-slate-200 font-light text-sm md:text-lg">
+            <span className="italic">When I&apos;m not coding</span>, I enjoy riding my bike, hiking with my partner and dog, having faith in the chicago bears, and playing videos games.
             </p>
           </div>
           <div className="mt-8 text-slate-200">

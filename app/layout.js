@@ -1,8 +1,8 @@
-import { Inter } from "next/font/google";
+import { Sora } from "next/font/google";
 import "./globals.css";
 
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Sora({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Joseph Meus - Full Stack Developer",
