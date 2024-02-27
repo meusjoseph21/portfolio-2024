@@ -34,11 +34,11 @@ const AboutSection = () => {
               and functional applications. I have experience in both frontend
               and backend development, and I am always looking to learn new
               technologies. Since the beginning of my career I have chosen a path that has required to me learn in and adapt in high demand environments. I am currently working as a Backend Engineer with
-              Chek Financial, a fintech startup based in Miami Florida. 
+              Chek Financial, a fintech startup based in Miami, Fl. 
             </p>
             <br></br>
             <p className="text-slate-200 font-light text-sm md:text-lg">
-            <span className="italic">When I&apos;m not coding</span>, I enjoy riding my bike, hiking with my partner and dog, having faith in the chicago bears, and playing videos games.
+            <span className="italic">When I&apos;m not coding</span>, I enjoy riding my bike, hiking with my partner and dog, having faith in the Chicago Bears, and playing videos games.
             </p>
           </div>
           <div className="mt-8 text-slate-200">

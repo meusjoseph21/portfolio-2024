@@ -45,15 +45,15 @@ export const experiencesData = [
     date: "2020 - 2021",
   },
   {
-    title: "Front End Engineer - Coterie Insurance",
+    title: "Frontend Engineer - Coterie Insurance",
     location: "Cincinnati, OH",
     description:
-      "After working solo for a year, I wanted to work with a team. I joined a startup called Coterie Insurance where I worked with a scrum team of 8 other engineers in a larger 65+ engineer team workforce. I worked with React, Typescript, React Testing Library, and more. Unfortunately I was hit by the layoff bug in 2022",
+      "After working solo for a year, I wanted to work with a team. I joined a startup called Coterie Insurance where I worked with a scrum team of 8 other engineers in a larger 65+ engineer team workforce. I worked with React, Typescript, React Testing Library, and more. Unfortunately I was hit by the layoff bug in 2022.",
     icon: React.createElement(FaReact),
     date: "2022 - 2022",
   },
   {
-    title: "Back End Engineer - Chek Financial",
+    title: "Backend Engineer - Chek Financial",
     location: "Miami, FL",
     description:
       "Immediately after being laid off, I found a job at a startup called Chek Financial where I currently work. I was engineer number two and I have seen the team grow to 7 engineers and 15 employees company wide. I work mainly with Python, Django, and PostgreSQL but I have also had a hand in the Flutter front end and our CI/CD pipeline.",
