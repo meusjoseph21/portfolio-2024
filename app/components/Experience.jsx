@@ -40,7 +40,7 @@ const Experience = () => {
               <h3 className="font-semibold capitalize text-slate-200">
                 {item.title}
               </h3>
-              <p className=" text-slate-200 font-normal !mt-0">
+              <p className=" text-slate-200 !font-extralight !mt-0">
                 {item.location}
               </p>
               <p className="!mt-1 !font-normal text-slate-200">
