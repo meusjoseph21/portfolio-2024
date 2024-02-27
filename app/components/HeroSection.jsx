@@ -40,7 +40,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-slate-200 text-base sm:text-lg mb-6 lg:text-xl">
-            &quot;Theres a way to do it better - find it.&quot; - Thomas Edison
+            &quot;There&apos;s a way to do it better - find it.&quot; - Thomas Edison
           </p>
           <div>
             <ScrollLink

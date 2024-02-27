@@ -29,6 +29,7 @@ const Experience = () => {
                 borderRight: "0.4rem solid #9ca3af",
               }}
               date={item.date}
+              dateClassName="text-slate-200 font-semibold px-[5rem] py-[5rem] bg-slate-100 rounded-md"
               icon={item.icon}
               iconStyle={{
                 background: "#fff",
